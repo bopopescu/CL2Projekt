@@ -10,6 +10,7 @@ class Turnament(models.Model):
         date_start=models.DateField(null=True)
         date_end=models.DateField(null=True)
         price=models.IntegerField(null=True)
+        user=models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
 
 class Usertur(models.Model):
     user=models.ForeignKey(get_user_model(), on_delete=models.CASCADE)

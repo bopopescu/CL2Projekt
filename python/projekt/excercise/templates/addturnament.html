@@ -5,10 +5,10 @@
   <div class="container">
     <div class="jumbotron">
         <h1>Dodaj Wydarzenie</h1>
-<form enctype="multipart/form-data" method="POST">
+        <form enctype="multipart/form-data" method="POST">
             {% csrf_token %}
           {{ form.as_p }}
-          <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4" name = 'agree'><a href="/addturnament?turnamentId={{turnament.id}}">Dodaj Turniej</a></button>
+            <button name = "" type = "submit">Dodaj Turniej</button>
         </form>
     </div>
   </div>

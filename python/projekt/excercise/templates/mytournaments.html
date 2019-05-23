@@ -1,4 +1,3 @@
-{% load staticfiles %}
 {% include 'indexx.html' %}
 {% block container %}
 {% load static %}
@@ -27,7 +26,7 @@
     <section>
         <div class="row padding-small">
             <i class="fas fa-users icon-users"></i>
-            <h1>Twoje Turnieje</h1>
+            <h1>Dodane Turnieje</h1>
             <hr>
             <div class="orange-line w-100"></div>
         </div>
@@ -42,30 +41,29 @@
             </thead>
             <tbody class="text-color-lighter">
 
-            {% for userturnament in turnaments_paginator %}
+            {% for tournament in tournaments_paginator %}
               <tr class="d-flex">
                 <td class="col-5">
-                    {{ userturnament.name }}
+                    {{ tournament.name }}
                 </td>
                 <td class="col-5">
-                    <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4" name = 'agree'><a href="/resignturnament?turnamentId={{turnament.id}}">Zrezygnuj</a></button>
+                    <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4" name = 'agree'><a href="/deletetournament?tournamentId={{tournament.id}}">Usun Turniej</a></button>
                 </td>
               </tr>
-
             {% endfor %}
-            {% if turnaments_paginator.has_other_pages %}
+            {% if tournaments_paginator.has_other_pages %}
                 <div class="pagination">
                     <span class="step-links">
-                        {% if turnaments_paginator.has_previous %}
-                            <a href="/userturnament?page=1"></a>
-                            <a href="/userturnament?page={{ turnaments_paginator.previous_page_number }}">Poprzednia</a>
+                        {% if tournaments_paginator.has_previous %}
+                            <a href="/mytournaments?page=1"></a>
+                            <a href="/mytournaments?page={{ tournaments_paginator.previous_page_number }}">Poprzednia</a>
                         {% endif %}
                         <span class="current">
-                             Page {{ turnaments_paginator.number }} of {{ turnaments_paginator.paginator.num_pages }}
+                             Page {{ tournaments_paginator.number }} of {{ tournaments_paginator.paginator.num_pages }}
                         </span>
 
-                        {% if turnaments_paginator.has_next %}
-                            <a href="/userturnament?page={{ turnaments_paginator.next_page_number }}">Kolejna</a>
+                        {% if tournaments_paginator.has_next %}
+                            <a href="/mytournaments?page={{ tournaments_paginator.next_page_number }}">Kolejna</a>
                         {% endif %}
                     </span>
                 </div>
@@ -76,10 +74,7 @@
                 <td class="col-5">
                     {{ element.name }}
                 </td>
-                <td class="col-5">
-                    <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4" name = 'agree'><a href="/deleteturnament?turnamentId={{turnament.id}}">Zrezygnuj</a></button>
-                </td>
-                <td clas="col-5">{{ element.turnament_description }}</td>
+                <td clas="col-5">{{ element.tournament_description }}</td>
               </tr>
              {% endfor %}
             <div class="col d-flex justify-content-end mb-2 noPadding">
@@ -87,4 +82,5 @@
         </table>
     </section>
 {% endblock%}
+
 

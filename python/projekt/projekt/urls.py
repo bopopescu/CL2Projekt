@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,re_path
-from excercise.views import TirView, turnamentview, RegView
-from excercise.views import AddturnamentView,user_loginview,resignturnament, newturnamentview
-from excercise.views import  userturnamentsview, takepart,profileview, addturnament, deleteturnament
+from excercise.userviews import  RegView,user_loginview, profileview
+from excercise.views import TirView
+from excercise.tournamentviews import  quittournament, userturnamentsview, takepart,  AddturnamentView, turnamentview, mytournamentsview, deletetournament
 
 
 urlpatterns = [
@@ -25,13 +25,12 @@ urlpatterns = [
     path('tir',TirView.as_view()),
     path('login',user_loginview),
     path('register',RegView.as_view()),
-    path('userturnament', userturnamentsview),
+    path('userturnaments', userturnamentsview),
     path('turnament',  turnamentview),
     path('addturnament',AddturnamentView.as_view()),
     path('takepart',takepart),
-    path('deleteturnament',deleteturnament),
-    path('addturnament',addturnament),
-    path('resignturnament',resignturnament),
-    path('newturnament',newturnamentview),
+    path('deletetournament',deletetournament),
+    path('quittournament', quittournament),
+    path('mytournaments', mytournamentsview),
     path('profile', profileview),
 ]
