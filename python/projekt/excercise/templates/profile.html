@@ -1,0 +1,14 @@
+{% include 'indexx.html' %}
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+    <meta charset="UTF-8">
+    <title>Profil</title>
+{% endblock %}
+{% block body %}
+    <div class ="container">
+    <h1>Profil:</h1>
+        <p>Nazwa Uzytkownika:{{ username }}</p>
+        <p>Email: {{ email }}</p>
+    </div>
+{%  endblock %}

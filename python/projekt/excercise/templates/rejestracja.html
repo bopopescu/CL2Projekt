@@ -1,0 +1,15 @@
+
+{% load staticfiles %}
+{% include 'index.html' %}
+{% block body_block %}
+  <div class="container">
+    <div class="jumbotron">
+        <h1>Zarejestruj Sie</h1>
+        <form method="POST">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input class="nav-link" type="submit" value="Rejestracja"/>
+        </form>
+    </div>
+  </div>
+{% endblock %}
