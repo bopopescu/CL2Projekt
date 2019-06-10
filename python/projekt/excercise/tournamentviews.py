@@ -2,14 +2,11 @@ from django.views import View
 from .models import Turnament,Usertur
 from django.shortcuts import redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from excercise.forms import AddForm, SignUpForm
+from excercise.forms import AddForm
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login, logout
-from django.http import  HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
-
+from django.utils.decorators import method_decorator
+@login_required
 def turnamentview(request):
     turnament = Turnament.objects.all()
     turnaments_page = request.GET.get('recipe_page')
@@ -22,13 +19,17 @@ def turnamentview(request):
         turnaments_page = paginator.page(paginator.num_pages)
     return render(request, 'turnieje.html', {'turnaments_paginator': turnaments_page})
 
-class AddturnamentView(View):
-    def get(self,request):
-        form = AddForm()
-        return render(request, 'addturnament.html', {'form':form})
-    def post(self, request):
+
+class AddTurnamentView(View):
+    @method_decorator(login_required)
+    def get (self,request):
+        if request.method =='GET':
+            form = AddForm()
+            return render(request, 'addturnament.html', {'form':form})
+    @method_decorator(login_required)
+    def post(self,request):
         form = AddForm(request.POST)
-        print("AddturnamentView", form.is_valid())
+        print("addturnamentsview", form.is_valid())
         if form.is_valid():
             a1 = form.cleaned_data['name']
             a2 = form.cleaned_data['place']
@@ -50,24 +51,21 @@ class AddturnamentView(View):
             return render(request, 'addturnament.html', {'form': form})
 
 
-
-
-
-
 @login_required
-def userturnamentsview(request):
-    if request.method =='GET':
-        userturnaments = Usertur.objects.filter(user=request.user).order_by('-id')
-        tournaments = [usertur.tournament for usertur in userturnaments]
-        tournaments_page = request.GET.get('page')
+def usertournamentsview(request):
+    if request.method == 'GET':
+        user_tournaments = Usertur.objects.filter(user=request.user).order_by('-id')
+        tournaments = [usertur.tournament for usertur in user_tournaments]
+        tournaments_page_num = request.GET.get('page')
         paginator = Paginator(tournaments, 5)
         try:
-            tournaments_page = paginator.page(tournaments_page)
+            tournaments_page = paginator.page(tournaments_page_num)
         except PageNotAnInteger:
             tournaments_page = paginator.page(request.GET.get('page', 1))
         except EmptyPage:
             tournaments_page = paginator.page(paginator.num_pages)
-        return render(request, 'userturnaments.html', {'turnaments_paginator': tournaments_page, 'turnaments':userturnaments})
+        return render(request, 'usertournaments.html',
+                      {'tournaments_paginator': tournaments_page, 'tournaments': user_tournaments})
 
 
 @login_required
@@ -75,7 +73,7 @@ def takepart(request):
     if request.method=='GET':
         turnamentId = request.GET.get('turnamentId')
         Usertur.objects.get_or_create(user=request.user, tournament_id=turnamentId)
-        return redirect("/userturnaments")
+        return redirect("/usertournaments")
 
 
 
@@ -85,16 +83,16 @@ def quittournament(request):
         tournament_id = request.GET.get('tournamentId')
         Usertur.objects.get( tournament_id = tournament_id, user=request.user).delete()
 
-        return redirect("/userturnaments")
+        return redirect("/usertournaments")
 
 @login_required
 def mytournamentsview(request):
     if request.method =='GET':
         mytournaments = Turnament.objects.filter(user=request.user)
-        tournaments_page = request.GET.get('page')
+        tournaments_page_num = request.GET.get('page')
         paginator = Paginator(mytournaments, 5)
         try:
-            tournaments_page = paginator.page(tournaments_page)
+            tournaments_page = paginator.page(tournaments_page_num)
         except PageNotAnInteger:
             tournaments_page = paginator.page(request.GET.get('page', 1))
         except EmptyPage:

@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'excercise', 'projekt',
-    'bootstrap4'
+    'bootstrap4',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'projekt.urls'
@@ -125,8 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_URL = '/login/'
-
-LOGIN_EXEMPT_URLS = (
+LOGIN_EXEMPT_URLS = ('/path/to/redirecturl'
 
 )
 
@@ -135,3 +136,8 @@ AUTHENTICATION_BACKENDS = (
     )
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+LOCALE_PATHS = (
+    os.path.join(PROJECT_PATH, '../locale'),
+)
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

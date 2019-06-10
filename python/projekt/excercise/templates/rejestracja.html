@@ -1,14 +1,25 @@
 
 {% load staticfiles %}
 {% include 'index.html' %}
+{% load crispy_forms_tags %}
 {% block body_block %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
   <div class="container">
     <div class="jumbotron">
         <h1>Zarejestruj Sie</h1>
         <form method="POST">
           {% csrf_token %}
           {{ form.as_p }}
-          <input class="nav-link" type="submit" value="Rejestracja"/>
+          {{ form|crispy }}
+    <div>
+    <li class="nav-item ml-4">
+             <input class="btn btn-outline-primary" type="submit" value="Rejestracja"/>
+    </li>
+</div>
         </form>
     </div>
   </div>

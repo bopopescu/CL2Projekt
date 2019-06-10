@@ -1,21 +1,31 @@
 {% include 'index.html' %}
 {% block body_block %}
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-fluid">
 <form enctype="multipart/form-data" action="/login" method="POST">
           {% csrf_token %}
         <h1>Zaloguj sie:</h1>
-          <label for="username">Nazwa uzytkownika:</label>
-          <input type="text" name="username" placeholder="Username">
-
-        <label for="password">Haslo:</label>
-          <input type="password" name="password" placeholder="Password">
+  <div class="form-group row">
+    <label for="username" class="col-sm-2 col-form-label">Nazwa:</label>
+    <div class="col-sm-10">
+      <input type="text" name="username" placeholder="Username">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="password" class="col-sm-2 col-form-label">Haslo:</label>
+      <input type="password" name="password" placeholder="Password">
+  </div>
 <div>
-<input type="submit" name="submit" value="Zaloguj sie">
+    <li class="nav-item ml-4">
+             <input  class="btn btn-outline-primary" type="submit" name="submit" value="Zaloguj Sie">
+
+    </li>
 </div>
 </form>
-
-</div>
-  </div>
-  </div>
+    </div>
 {% endblock %}

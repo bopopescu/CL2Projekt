@@ -1,56 +1,50 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <!doctype html>
 </html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TIR</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Charmonman:400,700|Open+Sans:400,600,700&amp;subset=latin-ext"
-        rel="stylesheet">
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="page-header">
         <nav class="navbar navbar-expand-lg justify-content-around">
-            <a href="tir" class="navbar-brand main-logo">
-                Turniejowy Informator <span>Rycerski</span>
-            </a>
+            <div class = "jumbotron">
+        <nav class="navbar navbar-expand-lg justify-content-around">
+            <h1>Turniejowy Informator Rycielski </h1>
+            <div class="nav nounderline text-uppercase">
             <ul class="nav nounderline text-uppercase">
+
                 <li class="nav-item ml-4">
-                    <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4">
+                    <button type="button" class="btn btn-outline-primary">
                     <a class="nav-link color-header" href="/addturnament">Dodaj Turniej</a>
                     </button>
                 </li>
                   <li class="nav-item ml-4">
-                    <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4">
+                    <button type="button" class="btn btn-outline-primary">
                     <a class="nav-link" href="/mytournaments">Dodane Turnieje</a>
                     </button>
                 </li>
 
                 <li class="nav-item ml-4">
-                    <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4">
+                    <button type="button" class="btn btn-outline-primary">
                     <a class="nav-link" href="/turnament"> Turnieje</a>
                     </button>
                 </li>
                 <li class="nav-item ml-4">
-                    <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4">
-                    <a class="nav-link" href="/userturnaments"> Twoje turnieje</a>
+                    <button type="button" class="btn btn-outline-primary">
+                    <a class="nav-link" href="/usertournaments"> Twoje turnieje</a>
                     </button>
                 </li>
                 <li class="nav-item ml-4">
-                    <button class="btn btn-color rounded-0 mt-4 pl-4 pr-4">
+                    <button type="button" class="btn btn-outline-primary">
                     <a class="nav-link" href="/tir">Wyloguj</a>
                     </button>
                 </li>
             </ul>
+        </div>
         </nav>
     </body>
     </header>

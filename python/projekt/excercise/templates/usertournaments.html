@@ -1,0 +1,93 @@
+{% load staticfiles %}
+{% include 'indexx.html' %}
+{% block container %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!doctype html>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body >
+    <section >
+            <div class="row padding-small" style="justify-content: center">
+                <h1>Twoje Turnieje</h1>
+
+                <div class="orange-line w-100"></div>
+            </div>
+    </section>
+
+        <table class="table table-sm">
+  <thead>
+    <tr>
+         </thead>
+  <tbody>
+    </tr>
+    <section class="mr-4 ml-4" >
+    <table class="table table-striped">
+            <thead>
+              <tr class="d-flex text-color-darker">
+                <th scope="col" class="col-5">Nazwa</th>
+              </tr>
+            </thead>
+
+            <tbody class="text-color-lighter">
+
+            {% for usertournament in tournaments_paginator %}
+              <tr class="d-flex">
+                <td class="col-5">
+                    {{ usertournament.name }}
+                </td>
+                <td class="col-5">
+                   <button type="button" class="btn btn-outline-primary" name = 'agree'><a href="/quittournament?tournamentId={{usertournament.id}}">Zrezygnuj</a></button>
+                </td>
+              </tr>
+            {% endfor %}
+            {% if tournaments_paginator.has_other_pages %}
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        {% if tournaments_paginator.has_previous %}
+                            <li class="page-item">
+                                <a class="page-link" tabindex="-1" href="/usertournaments?page={{ tournaments_paginator.previous_page_number }}">Poprzednia</a>
+                            </li>
+                        {% endif %}
+                        {% for num in tournaments_paginator.paginator.page_range %}
+                          {% ifequal num tournaments_paginator.number %}
+                            <li class="page-item"  ><a  class="page-link" href="/usertournaments?page={{ num }}">{{ num }}</a></li>
+                          {% else %}
+                            <li class="page-item"><a class="page-link" href="/usertournaments?page={{ num }}">{{ num }}</a></li>
+                          {% endifequal %}
+                        {% endfor %}
+                        {% if tournaments_paginator.has_next %}
+                            <li class="page-item">
+                                <a class="page-link" href="/usertournaments?page={{ tournaments_paginator.next_page_number }}">Kolejna</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            {% endif %}
+            {% for element in p %}
+
+                <th scope="row" class="col-1">{{ element.id }}</th>
+                <td class="col-5">
+                    <div class="carousel-item {%  if element.idx == 1 %}active{% endif %}">{{ element.name }}</div>
+                </td>
+                <td class="col-5">{{ element.tournament_description }}</td>
+              </tr>
+             {% endfor %}
+            <div class="col d-flex justify-content-end mb-2 noPadding"></div>
+            </tbody>
+        </table>
+    </section>
+{% endblock%}
+    </tr>
+</tbody>
+</table>
+</body>
+</html>
