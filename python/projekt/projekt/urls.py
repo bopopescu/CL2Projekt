@@ -14,24 +14,25 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from excercise.userviews import RegView, user_loginview, profileview
-from excercise.views import TirView, webtournamentview
-from excercise.tournamentviews import quittournament, usertournamentsview, takepart,  AddTurnamentView, turnamentview, mytournamentsview, deletetournament
+from excercise.views import TirView
+from excercise.tournamentviews import quittournament, usertournamentsview, takepart,  AddTurnamentView, turnamentview, mytournamentsview, deletetournament, detaletournament, WebturnamentView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tir',TirView.as_view()),
-    path('login',user_loginview),
-    path('register',RegView.as_view()),
-    path('usertournaments', usertournamentsview),
-    path('turnament',  turnamentview),
-    path('addturnament',AddTurnamentView.as_view()),
-    path('takepart',takepart),
-    path('deletetournament',deletetournament),
-    path('quittournament', quittournament),
-    path('mytournaments', mytournamentsview),
-    path('webtournament', webtournamentview),
-    path('profile', profileview),
+    path('',TirView.as_view()),
+    path('login',user_loginview, name= 'login'),
+    path('register',RegView.as_view(), name='register'),
+    path('usertournaments', usertournamentsview, name='userturnament'),
+    path('turnament',  turnamentview, name='tournament'),
+    path('addturnament',AddTurnamentView.as_view(), name='addtournament'),
+    re_path(r'^takepart/(?P<turnament_id>(\d+))/$',takepart, name='takepart'),
+    path('deletetournament',deletetournament, name='deletetournament'),
+    path('quittournament', quittournament, name='quittournament'),
+    path('mytournaments', mytournamentsview, name='mytournament'),
+    path('webturnament', WebturnamentView, name='webtournament'),
+    path('profile', profileview, name='profile'),
+    re_path (r'^detaletournament/(?P<turnament_id>(\d+))/$', detaletournament, name='detaletournament'),
 ]

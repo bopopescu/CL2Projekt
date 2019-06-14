@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1c46974a-1970-4d47-acec-f85f7999e566" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python/projekt/excercise/tournamentviews.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/projekt/excercise/userviews.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/projekt/excercise/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/activiationemail.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/addturnament.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/addturnament.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/indexx.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/indexx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/newturnament.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/mytournaments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/userturnament.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/userturnaments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/logowanie.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/logowanie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/turnieje.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/turnieje.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/usertournaments.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/usertournaments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/webturnament.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/webturnament.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/templates/zapasowy.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/templates/zapasowy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/excercise/tournamentviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/tournamentviews.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/projekt/excercise/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/excercise/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/locale/de/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/locale/de/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/projekt/projekt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/projekt/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/projekt/projekt/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/projekt/projekt/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,10 +51,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/mytournaments.html">
+        <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/webturnament.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="54" column="40" lean-forward="true" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+            <state relative-caret-position="377">
+              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/zapasowy.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="50" lean-forward="true" selection-start-column="50" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -54,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/projekt/excercise/tournamentviews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="108" column="2" selection-start-line="108" selection-start-column="2" selection-end-line="108" selection-end-column="2" />
+            <state relative-caret-position="1309">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -63,11 +80,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/projekt/excercise/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/addturnament.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/projekt/projekt/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+            <state relative-caret-position="219">
+              <caret line="19" column="190" selection-start-line="19" selection-start-column="190" selection-end-line="19" selection-end-column="190" />
               <folding>
                 <element signature="e#631#663#0" expanded="true" />
               </folding>
@@ -76,19 +114,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/python/projekt/excercise/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/indexx.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,7 +142,12 @@
       <find>newturnamentview</find>
       <find>userturnaments</find>
       <find>turna</find>
+      <find>myt</find>
+      <find>turnam</find>
     </findStrings>
+    <replaceStrings>
+      <replace>tournam</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,35 +179,40 @@
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/form.html" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/userturnieje.html" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/opisturnieju.html" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/index.html" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/logowanie.html" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/rejestracja.html" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/profile.html" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/admin.py" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/base.html" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/turnieje.html" />
-        <option value="$PROJECT_DIR$/python/projekt/projekt/settings.py" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/tokens.py" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/activiationemail.html" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/forms.py" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/userviews.py" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/models.py" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/addturnament.html" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/userturnament.html" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/userturnaments.html" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/newturnament.html" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/views.py" />
-        <option value="$PROJECT_DIR$/python/projekt/projekt/urls.py" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/tournamentviews.py" />
-        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/mytournaments.html" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/admin.py" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/userturnaments.html" />
         <option value="$PROJECT_DIR$/python/projekt/excercise/templates/indexx.html" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/userviews.py" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/mytournaments.html" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/rejestracja.html" />
+        <option value="$PROJECT_DIR$/python/projekt/locale/en/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/logowanie.html" />
+        <option value="$PROJECT_DIR$/python/projekt/projekt/settings.py" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/views.py" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/index.html" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/turnieje.html" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/usertournaments.html" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/zapasowy.html" />
+        <option value="$PROJECT_DIR$/python/projekt/projekt/urls.py" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/addturnament.html" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/tournamentviews.py" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/templates/webturnament.html" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/models.py" />
+        <option value="$PROJECT_DIR$/python/projekt/excercise/forms.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="13" />
-    <option name="width" value="800" />
-    <option name="height" value="330" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="224" />
+    <option name="y" value="101" />
+    <option name="width" value="1320" />
+    <option name="height" value="756" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -180,13 +222,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CL2ProjektK" type="b2602c69:ProjectViewProjectNode" />
               <item name="CL2ProjektK" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CL2ProjektK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CL2ProjektK" type="462c0819:PsiDirectoryNode" />
+              <item name="projekt1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CL2ProjektK" type="b2602c69:ProjectViewProjectNode" />
@@ -225,6 +271,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,9 +279,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/djangorozszerzenie/WAR_PYT_S_14_Zaawansowane_Django" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjektZdalny/WAR_SPY_S_30_PYT_ScrumLab" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -331,11 +379,40 @@
       <workItem from="1558081504595" duration="5533000" />
       <workItem from="1558516767425" duration="42204000" />
       <workItem from="1558648974630" duration="6135000" />
+      <workItem from="1558697931526" duration="2562000" />
+      <workItem from="1559117094730" duration="2763000" />
+      <workItem from="1559225397407" duration="53000" />
+      <workItem from="1559236105891" duration="15000" />
+      <workItem from="1559493033582" duration="12000" />
+      <workItem from="1559505189079" duration="598000" />
+      <workItem from="1559597815073" duration="616000" />
+      <workItem from="1559645883652" duration="6530000" />
+      <workItem from="1559654661204" duration="7380000" />
+      <workItem from="1559675876483" duration="13371000" />
+      <workItem from="1559690706743" duration="5028000" />
+      <workItem from="1559742268076" duration="7053000" />
+      <workItem from="1559755167847" duration="4594000" />
+      <workItem from="1559821069734" duration="5858000" />
+      <workItem from="1560166177177" duration="2131000" />
+      <workItem from="1560170117889" duration="1022000" />
+      <workItem from="1560171771514" duration="2045000" />
+      <workItem from="1560177755606" duration="246000" />
+      <workItem from="1560247256182" duration="7098000" />
+      <workItem from="1560331144221" duration="630000" />
+      <workItem from="1560336908181" duration="3605000" />
+      <workItem from="1560341661719" duration="300000" />
+      <workItem from="1560342314645" duration="3356000" />
+      <workItem from="1560346085224" duration="1282000" />
+      <workItem from="1560496151531" duration="8065000" />
+      <workItem from="1560514918864" duration="5182000" />
+      <workItem from="1560522407372" duration="3043000" />
+      <workItem from="1560534141516" duration="6685000" />
+      <workItem from="1560541574506" duration="1092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182679000" />
+    <option name="totallyTimeSpent" value="284894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,19 +424,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1000" extended-state="6" />
+    <frame x="0" y="25" width="1680" height="970" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50453174" side_tool="true" weight="0.21787025" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4954683" visible="true" weight="0.20064034" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4954683" visible="true" weight="0.21970624" />
       <window_info id="Structure" order="2" sideWeight="0.5007899" side_tool="true" weight="0.19706242" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.35556915" side_tool="true" weight="0.24613555" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.41738066" side_tool="true" weight="0.32818073" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3283582" />
-      <window_info anchor="bottom" id="Database Changes" order="4" weight="0.32898173" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="5" sideWeight="0.6444308" visible="true" weight="0.20091848" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.499388" weight="0.3272101" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49816403" weight="0.32898173" />
+      <window_info anchor="bottom" id="Database Changes" order="4" weight="0.32818073" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" sideWeight="0.6444308" visible="true" weight="0.21403092" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.499388" weight="0.326062" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.5826193" weight="0.32818073" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.7870257" weight="0.32774192" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39954075" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -373,16 +451,16 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" sideWeight="0.50453174" side_tool="true" weight="0.21787025" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4954683" visible="true" weight="0.20064034" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4954683" visible="true" weight="0.2171825" />
       <window_info id="Structure" order="2" sideWeight="0.5007899" side_tool="true" weight="0.19706242" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.35556915" side_tool="true" weight="0.24613555" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.41738066" side_tool="true" weight="0.32818073" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3283582" />
-      <window_info anchor="bottom" id="Database Changes" order="4" weight="0.32898173" />
-      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.6444308" visible="true" weight="0.20091848" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.499388" weight="0.3272101" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49816403" weight="0.32898173" />
+      <window_info anchor="bottom" id="Database Changes" order="4" weight="0.32818073" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" sideWeight="0.6444308" visible="true" weight="0.21354765" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.499388" weight="0.32699168" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.5826193" weight="0.32818073" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.7870257" weight="0.32774192" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39954075" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -399,23 +477,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CL2ProjektK/projekt/tests.py" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32a9821f-f3d1-42ae-a52f-7c807e4e6efe/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CL2ProjektK/projekt/models.py" />
-    <entry file="file://$PROJECT_DIR$/CL2ProjektK/projekt/views.py" />
-    <entry file="file://$PROJECT_DIR$/CL2ProjektK/projekt/forms.py" />
-    <entry file="file://$PROJECT_DIR$/CL2ProjektK/projekt/admin.py" />
-    <entry file="file://$PROJECT_DIR$/CL2ProjektK/projekt/apps.py" />
     <entry file="file://$PROJECT_DIR$/CL2ProjektK/urls.py" />
     <entry file="file://$PROJECT_DIR$/CL2ProjektK/settings.py" />
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/projekt/projekt/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -430,9 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/middleware.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/uzytkownicy.html" />
     <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/wylogowanie.html" />
     <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/turnieje2.html" />
@@ -440,13 +500,6 @@
     <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/addturniej.html" />
     <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/opisturnieju.html" />
     <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/userturnieje.html" />
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/python3.6/site-packages/django/contrib/auth/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -489,20 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/logowanie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/python3.6/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1717">
@@ -510,64 +549,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/projekt/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="136" column="64" selection-start-line="136" selection-start-column="64" selection-end-line="136" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/tokens.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/activiationemail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#1#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/rejestracja.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/turnieje.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="54" column="24" selection-start-line="43" selection-start-column="11" selection-end-line="54" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/tokens.py" />
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/activiationemail.html" />
     <entry file="file://$PROJECT_DIR$/lib/python3.6/site-packages/django/shortcuts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -575,95 +558,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/addturnament.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/middleware.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python3.6/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="468" column="6" selection-start-line="468" selection-start-column="6" selection-end-line="468" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/views.py">
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="41" selection-start-line="19" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/userviews.py">
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="55" column="47" lean-forward="true" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/models.py">
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/userturnaments.html">
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/indexx.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        <state relative-caret-position="629">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/tournamentviews.py">
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="108" column="2" selection-start-line="108" selection-start-column="2" selection-end-line="108" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/mytournaments.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="62" column="91" selection-start-line="62" selection-start-column="91" selection-end-line="62" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/locale/en/LC_MESSAGES/django.mo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/logowanie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="111" selection-start-line="25" selection-start-column="111" selection-end-line="25" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/locale/en/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/locale/de/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/userviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/projekt/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="145" column="25" selection-start-line="145" selection-start-column="25" selection-end-line="145" selection-end-column="25" />
+          <folding>
+            <element signature="e#308#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/locale/de/LC_MESSAGES/django.mo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/turnieje.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="54" column="40" lean-forward="true" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+          <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/rejestracja.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/usertournaments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/python3.6/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/zapasowy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" lean-forward="true" selection-start-column="50" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/webturnament.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/tournamentviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/projekt/projekt/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        <state relative-caret-position="219">
+          <caret line="19" column="190" selection-start-line="19" selection-start-column="190" selection-end-line="19" selection-end-column="190" />
           <folding>
             <element signature="e#631#663#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/indexx.html">
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/templates/addturnament.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/projekt/excercise/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

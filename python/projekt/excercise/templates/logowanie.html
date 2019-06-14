@@ -1,4 +1,5 @@
 {% include 'index.html' %}
+{% load i18n %}
 {% block body_block %}
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -9,20 +10,20 @@
     <div class="jumbotron jumbotron-fluid">
 <form enctype="multipart/form-data" action="/login" method="POST">
           {% csrf_token %}
-        <h1>Zaloguj sie:</h1>
+        <h1>{% trans 'Zaloguj sie:'%}</h1>
   <div class="form-group row">
-    <label for="username" class="col-sm-2 col-form-label">Nazwa:</label>
+    <label for="username" class="col-sm-2 col-form-label">{% trans 'Nazwa:' %}</label>
     <div class="col-sm-10">
       <input type="text" name="username" placeholder="Username">
     </div>
   </div>
   <div class="form-group row">
-    <label for="password" class="col-sm-2 col-form-label">Haslo:</label>
+    <label for="password" class="col-sm-2 col-form-label">{%  trans 'Haslo:' %}</label>
       <input type="password" name="password" placeholder="Password">
   </div>
 <div>
     <li class="nav-item ml-4">
-             <input  class="btn btn-outline-primary" type="submit" name="submit" value="Zaloguj Sie">
+             <input  class="btn btn-outline-primary" type="submit" name="submit" value={% trans "Zaloguj Sie"%}>
 
     </li>
 </div>

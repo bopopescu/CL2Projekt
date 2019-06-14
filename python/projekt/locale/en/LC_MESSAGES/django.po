@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-05 08:50+0000\n"
+"POT-Creation-Date: 2019-06-11 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: excercise/templates/addturnament.html:14
+msgid "Dodaj Wydarzenie"
+msgstr ""
+
+#: excercise/templates/addturnament.html:18
+msgid "Dodaj Turniej"
+msgstr ""
+
+#: excercise/templates/logowanie.html:13
+msgid "Zaloguj sie:"
+msgstr ""
+
+#: excercise/templates/logowanie.html:15
+msgid "Nazwa:"
+msgstr ""
+
+#: excercise/templates/logowanie.html:21
+msgid "Haslo:"
+msgstr ""
+
+#: excercise/templates/logowanie.html:26
+msgid "Zaloguj Sie"
+msgstr ""
+
 #: excercise/userviews.py:58
 msgid "Nie poprawne dane"
 msgstr "Incorect data"
+
+#: projekt/settings.py:146
+msgid "English"
+msgstr ""

@@ -1,8 +1,8 @@
 from django.views import View
-from .models import Turnament,Usertur
+from .models import Turnament, Usertur
 from django.shortcuts import redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from excercise.forms import AddForm
+from excercise.forms import AddForm, GradeForm
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
@@ -69,11 +69,10 @@ def usertournamentsview(request):
 
 
 @login_required
-def takepart(request):
+def takepart(request, turnament_id):
     if request.method=='GET':
-        turnamentId = request.GET.get('turnamentId')
-        Usertur.objects.get_or_create(user=request.user, tournament_id=turnamentId)
-        return redirect("/usertournaments")
+        Usertur.objects.get_or_create(user=request.user, tournament_id=turnament_id)
+        return redirect("/detaletournament/"+turnament_id)
 
 
 
@@ -105,3 +104,43 @@ def deletetournament(request):
         tournament_id= request.GET.get('tournamentId')
         Turnament.objects.filter( id=tournament_id).delete()
         return redirect("/mytournaments")
+
+@login_required
+def detaletournament(request, turnament_id):
+    if request.method=='GET':
+        turnament = Turnament.objects.get(id=turnament_id)
+        usertournament = None
+        try:
+            usertournament = Usertur.objects.get(user=request.user, turnament_id=turnament_id)
+        except:
+            pass
+        return render(request,"webturnament.html", {'turnament':turnament, 'userturnament':usertournament})
+
+class WebturnamentView(View):
+    @method_decorator(login_required)
+    def get(self, request):
+        if request.method == 'GET':
+            webform = GradeForm()
+            return render(request, 'webturnament.html', {'form': webform})
+    @method_decorator(login_required)
+    def post(self, request):
+        webform = GradeForm(request.POST)
+        if webform.is_valid():
+            a7 = webform.cleaned_data['grade']
+            grade = Turnament.objects.get(
+                grade=a7,
+                user=request.user)
+            grade.save()
+            return redirect('/webturnament')
+        else:
+            return render(request, 'webturnament.html', {'form': webform})
+
+
+
+@login_required
+def quittournament(request):
+    if request.method=='GET':
+        tournament_id = request.GET.get('tournamentId')
+        Usertur.objects.get( tournament_id = tournament_id, user=request.user).delete()
+
+        return redirect("/usertournaments")

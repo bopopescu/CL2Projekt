@@ -44,7 +44,7 @@
                     {{ turnament.name }}
                 </td>
                 <td class="col-5">
-                   <button type="button" class="btn btn-outline-primary" name = 'agree'><a href="/takepart?turnamentId={{turnament.id}}">Wez Udzial</a></button>
+                   <button type="button" class="btn btn-outline-primary" name = 'agree'><a href="{%  url "detaletournament" turnament_id=turnament.id %}">Detale Turnieju</a></button>
                 </td>
               </tr>
             {% endfor %}
